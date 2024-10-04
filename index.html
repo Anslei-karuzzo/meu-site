@@ -1070,6 +1070,28 @@
     <script src="assets/js/jquery.barfiller.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tinacms@latest/dist/tinacms.umd.js"></script>
+<script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+    const { TinaCMS } = window.TinaCMS;
+
+    const cms = new TinaCMS({
+      enabled: true, // Ativa o TinaCMS
+      toolbar: true, // Mostra a barra de ferramentas do TinaCMS
+    });
+
+    // Exemplo de código para manipular os campos do CMS
+    cms.registerApi('content', {
+      load: async () => {
+        // Aqui você pode carregar os dados de conteúdo dinamicamente
+      },
+    });
+
+    // Ativa a edição de conteúdo na página
+    cms.enable();
+  });
+</script>
+
 </body>
 
 </html>
