@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel de Admin</title>
-    <script src="https://cdn.jsdelivr.net/npm/tinacms@latest/dist/tinacms.umd.js"></script>
-    <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function() {
-            const { TinaCMS, GitHubClient } = window.TinaCMS;
+</head>
+<body>
+    <h1>Painel de Administração</h1>
+    <p>Autenticação via GitHub OAuth</p>
 
-            // Configurar o TinaCMS para trabalhar com GitHub OAuth
+    <!-- Adicionando o TinaCMS -->
+    <script type="module">
+        import { TinaCMS } from 'https://cdn.jsdelivr.net/npm/@tinacms/tinacms@latest/dist/index.js';
+        import { GitHubClient } from 'https://cdn.jsdelivr.net/npm/@tinacms/github-client@latest/dist/index.js';
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Configuração do GitHubClient
             const githubClient = new GitHubClient({
-                clientId: 'Ov23li8uNNRSb2i8MZl2', // Substitua com seu Client ID
-                baseRepoFullName: 'Anslei-karuzzo/meu-site', // Repositório no GitHub
-                branch: 'main' // Branch do repositório
+                clientId: 'Ov23li8uNNRSb2i8MZl2', // Substitua pelo seu Client ID do GitHub OAuth
+                baseRepoFullName: 'Anslei-karuzzo/meu-site', // Exemplo: 'meuusuario/meurepositorio'
+                branch: 'main', // Certifique-se de que está no branch correto
             });
 
+            // Inicializar o TinaCMS
             const cms = new TinaCMS({
                 enabled: true,
                 toolbar: true,
@@ -24,12 +31,9 @@
                 },
             });
 
+            // Autenticação via GitHub
             githubClient.authenticate();
         });
     </script>
-</head>
-<body>
-    <h1>Administração do Site</h1>
-    <p>Autenticação via GitHub OAuth</p>
 </body>
 </html>
