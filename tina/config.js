@@ -1,11 +1,12 @@
-import { defineConfig } from 'tinacms'
+import { defineConfig } from 'tinacms';
 
 export default defineConfig({
-  clientId: process.env.TINA_CLIENT_ID, // necessário para autenticação
-  branch: 'main',
+  clientId: 'Ov23li8uNNRSb2i8MZl2', // Substitua pelo seu Client ID do GitHub
+  branch: 'main', // Certifique-se de que está usando o branch correto
+  tokenStorage: 'localStorage', // Armazena o token no localStorage para manter o login
   media: {
     loadMedia: () => {
-      // Configuração de mídia
+      // Configuração para mídia (opcional)
     },
   },
   collections: [
@@ -19,4 +20,4 @@ export default defineConfig({
       ],
     },
   ],
-})
+});
