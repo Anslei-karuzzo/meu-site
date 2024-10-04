@@ -1,0 +1,218 @@
+
+.accordion.faqs .card .card-header {
+    background: #fff;
+    padding: 0;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    border: none;
+}
+
+.accordion.faqs .card {
+    margin-bottom: 20px;
+    border-radius: 0px;
+    border: 2px solid #f3f5f8;
+}
+
+.accordion.faqs .card:last-child {
+    margin-bottom: 0;
+}
+
+.accordion.faqs .card .card-header .btn-link {
+    padding: 25px 40px;
+    background: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: $headline_color;
+    width: 100%;
+    display: block;
+    text-align: left;
+    position: relative;
+    border-radius: 0px;
+    position: relative;
+    text-decoration: none;
+    border: none;
+    padding-right: 95px;
+    @media #{$lg}{
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+    @media #{$xs}{
+        padding: 15px 30px;
+        font-size: 16px;
+    }
+}
+
+.accordion.faqs .card .card-header .btn-link::after {
+    right: 40px;
+    content: "+";
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    top: 50%;
+    font-size: 25px;
+    font-weight: 400;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-radius: 50%;
+    position: absolute;
+    line-height: 51px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    @media #{$xs}{
+        display: none;
+    }
+}
+
+.accordion.faqs .card .subtitle > button[aria-expanded="true"]::after {
+    content: "-";
+}
+
+.accordion.faqs .card .card-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 30px;
+    padding-bottom: 30px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.accordion.faqs .card .card-body .content {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.accordion.faqs .card:not(:first-of-type):not(:last-of-type) {
+    border-bottom: 2px solid #f3f5f8;
+}
+
+.faq-icon-box {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: #fff;
+    top: 40%;
+    right: 85px;
+    margin-top: -70px;
+    z-index: 2;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+}
+
+.faq-thumb {
+    position: relative;
+    z-index: 2;
+}
+
+.faq-icon-box img {
+    -webkit-animation: 1.5s shake infinite;
+    animation: 1.5s shake infinite;
+    width: 80px;
+    height: auto;
+}
+
+@-webkit-keyframes shake {
+    0% {
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(7deg);
+        transform: rotate(7deg);
+    }
+}
+
+.faq-icon-box::after {
+    width: 180px;
+    height: 180px;
+    -webkit-box-shadow: 0 8px 16px 0px rgb(130 139 148 / 30%);
+    box-shadow: 0 8px 16px 0px rgb(130 139 148 / 30%);
+    left: -20px;
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.faq-section h2 {
+    margin-bottom: 40px;
+}
+
+.question-section {
+    background: $theme_color; 
+    padding: 40px;
+    @media #{$xs}{
+        margin-top: 60px;
+    }
+}
+
+.question-section h6 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.question-section input::placeholder,
+.question-section textarea::placeholder {
+    font-size: 14px;
+    color: #fff;
+}
+
+.question-section button {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.question-section input,
+.question-section textarea,
+.question-section select {
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    margin-bottom: 20px;
+}

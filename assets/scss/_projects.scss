@@ -1,0 +1,132 @@
+.project-single{
+    background: #fff;
+    margin-bottom: 40px;
+    border-radius: 12px 12px 0 0;
+    &:hover {
+        box-shadow: 0 3px 20px 0 rgb(40 40 40 / 13%);
+    }
+}
+
+.project-img{
+    position: relative;
+
+    img{
+        border-radius: 12px 12px 0 0;
+        transition: .5s ease-in-out;
+    }
+}
+
+
+
+.project-content {
+    padding: 30px 40px 40px;
+
+    @media #{$lg}{
+        padding: 30px 32px 40px;
+    }
+    @media #{$xs}{
+        padding: 30px 30px 40px;
+    }
+}
+
+.project-content .project-cat a {
+    color: $primary_color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    position: relative;
+}
+
+.project-title h4{
+    color: $theme_color;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 15px 0;
+
+    @media #{$lg}{
+        font-size: 22px;
+    }
+    @media #{$xs}{
+        font-size: 20px;
+    }
+    a {
+        color: $theme_color;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 26px;
+        margin: 5px 0;
+    
+        @media #{$lg}{
+            font-size: 22px;
+        }
+    }
+}
+
+.project-wrap .owl-stage-outer {
+    overflow: initial;
+}
+
+.project-more i {
+    font-size: 30px;
+    font-weight: 500;
+    color: $theme_color;
+    margin-left: 13px;
+    
+}
+
+.project-more .main-btn {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.5;
+    padding: 12px 20px;
+    margin-top: 20px;
+
+    &:hover i{
+        color: #fff;
+    }
+
+    @media #{$lg} {
+       padding: 10px 18px; 
+    }
+
+    @media #{$xs} {
+       padding: 8px 18px; 
+    }
+}
+
+.project-wrap .owl-dots button.owl-dot span {
+    width: 35px;
+    height: 3px;
+    background: #6b7475;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.project-wrap .owl-dots button.owl-dot.active span {
+    width: 35px;
+    height: 6px;
+    background: $theme_color;
+}
+
+.project-wrap .owl-dots {
+    text-align: center;
+}
+
+
+#project-page .mt-30 {
+    @media #{$xs}{
+        margin-top: 0;
+    }
+  }
+
+#project-page .mt-50 {
+    @media #{$xs}{
+        margin-top: 20px;        
+    }
+  }
+
+
+
+
+

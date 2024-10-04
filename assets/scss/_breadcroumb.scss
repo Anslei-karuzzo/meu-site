@@ -1,0 +1,105 @@
+/* Breadcrumb CSS */
+
+.breadcroumb-area {
+    background-image: url(../img/breadcrumb/breadcrumb.jpg);
+}
+
+.service-bg {
+    background-image: url(../img/breadcrumb/service_bg.jpg);
+}
+
+.paper-bg {
+    background-image: url(../img/breadcrumb/paper_recycle.jpg);
+}
+
+.plastic-bg {
+    background-image: url(../img/breadcrumb/plastic_recycle.jpg);
+}
+
+.glass-bg {
+    background-image: url(../img/breadcrumb/glass_recycle.jpg);
+}
+
+.aluminium-bg {
+    background-image: url(../img/breadcrumb/aluminium_recycle.jpg);
+}
+
+.electronics-bg {
+    background-image: url(../img/breadcrumb/electronics_recycle.jpg);
+}
+
+.metal-bg {
+    background-image: url(../img/breadcrumb/metal_recycle.jpg);
+}
+
+.team-bg {
+    background-image: url(../img/breadcrumb/team_bg.jpg);
+}
+
+.faq-bg {
+    background-image: url(../img/breadcrumb/faq_bg.jpg);
+}
+
+.project-bg {
+    background-image: url(../img/breadcrumb/project_bg.jpg);
+}
+
+.blog-bg {
+    background-image: url(../img/breadcrumb/blog_bg.jpg);
+}
+
+.contact-bg {
+    background-image: url(../img/breadcrumb/contact_bg.jpg);
+}
+
+
+
+
+.breadcroumb-area {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+	z-index: 1;
+	
+	& .breadcroumb-title h1 {
+		font-size: 70px;
+		font-weight: 600;
+        letter-spacing: 4px;
+        color: $white;
+        margin: 0;
+        
+        @media #{$md} {
+            font-size: 60px;
+           }
+    
+           @media #{$sm} {
+            font-size: 50px;
+           }
+
+           @media #{$xs} {
+            font-size: 50px;
+           }
+    }
+
+    h6 {
+        color: $primary_color;
+        font-size: 17px;
+        letter-spacing: 1px;
+        margin-top: 25px;
+        a {
+            font-size: 17px;
+            color: #fff;
+        }
+    }
+	
+}
+
+
+
+
+

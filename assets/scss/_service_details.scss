@@ -1,0 +1,423 @@
+
+.service-details {
+    position: relative;
+    display: block;
+    padding: 120px 0 60px;
+    @media #{$md} {
+        padding: 80px 0 0;
+    }
+    @media #{$xs} {
+        padding: 60px 0 0;
+    }
+
+}
+
+.service-details_sidebar {
+    position: relative;
+    display: block;
+}
+
+.service-details_sidebar-service {
+    position: relative;
+    display: block;
+}
+
+.service-details_sidebar-service-list {
+    margin: 0;
+}
+
+.service-details_sidebar-service-list li + li {
+    margin-top: 2px;
+}
+
+.service-details_sidebar-service-list li a {
+    color: $theme_color;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    display: block;
+    background-color: #edf3f6;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+}
+
+.service-details_sidebar-service-list li.current a,
+.service-details_sidebar-service-list li a:hover {
+    background-color: $theme_color;
+    color: #fff;
+}
+
+.service-details_sidebar-service-list li a span {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%) scale(0);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    color: $theme_color;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.service-details_sidebar-service-list li.current a span,
+.service-details_sidebar-service-list li a:hover span {
+    transform: translateY(-50%) scale(1);
+    color: #fff;
+}
+
+.service-details_need-help {
+    position: relative;
+    display: block;
+    padding: 53px 50px 51px;
+    margin-top: 30px;
+    text-align: center;
+    z-index: 1;
+    background-color: $theme_color;
+    @media #{$md} {
+        display: none;
+    }
+    @media #{$xs} {
+        display: none;
+    }
+}
+
+.service-details_need-help-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $theme_color;
+    opacity: 0.1;
+    z-index: -1;
+   
+}
+
+.service-details_need-help-icon {
+    height: 57px;
+    width: 57px;
+    background-color: $primary_color;
+    color: #fff;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 0;
+    transition: all 500ms ease;
+}
+
+.service-details_need-help-icon:hover {
+    background-color: #fff;
+    color: $theme_color;
+}
+
+.service-details_need-help-title {
+    font-size: 35px;
+    color: #fff;
+    line-height: 40px;
+    margin-bottom: 33px;
+}
+
+.service-details_need-help-contact {
+    position: relative;
+    display: block;
+    margin-top: 31px;
+}
+
+.service-details_need-help-contact p {
+    font-size: 16px;
+    color: #eee;
+    margin: 0;
+    line-height: 29px;
+}
+
+.service-details_need-help-contact a {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 700;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.service-details_need-help-contact a:hover {
+    color: $theme_color;
+}
+
+.service-details_right {
+    position: relative;
+    display: block;
+    @media #{$md}{
+        margin-top: 60px;
+    }
+    @media #{$xs}{
+        margin-top: 60px;
+    }
+}
+
+.service-details_img {
+    position: relative;
+    display: block;
+}
+
+.service-details_img img {
+    width: 100%;
+}
+
+.service-details_img-icon {
+    position: absolute;
+    bottom: -40px;
+    right: 30px;
+    height: 98px;
+    width: 98px;
+    background-color:$theme_color;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 12px 0px #b0b4b73d;
+}
+
+.service-details_img-icon img {
+    width: 55px;
+    height: auto;
+}
+
+.service-details_content {
+    position: relative;
+    display: block;
+    margin-top: 60px;
+}
+
+.service-details_title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    margin-bottom: 23px;
+}
+
+.service-details_text-1 {
+    margin: 0;
+}
+
+.service-details_text-2 {
+    margin: 0;
+    padding-top: 34px;
+}
+
+.service-details_two-icons {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-top: 1px solid #c9d5db;
+    border-bottom: 1px solid #c9d5db;
+    padding: 39px 0 43px;
+    margin: 49px 0 49px;
+    @media #{$xs} {
+        flex-direction: column;
+        margin: 30px 0 30px;
+        padding: 20px 0 20px;
+        border: none;
+    }
+}
+
+.service-details_two-icon-single {
+    position: relative;
+    display: block;
+    max-width: 360px;
+    width: 100%;
+    padding-left: 110px;
+    float: left;
+    @media #{$xs} {
+        margin-bottom: 60px;
+    }
+}
+
+
+.service-details_two-icon {
+    height: 90px;
+    width: 90px;
+    background-color: #b9dbcf;
+    font-size: 28px;
+    color: $theme_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -17px;
+    left: 0;
+}
+
+.service-icon img {
+    width: 50px;
+}
+
+.service-details_two-icon span {
+    position: relative;
+    display: inline-block;
+}
+
+.service-details_two-icon-content {
+    font-size: 16px;
+    color: $theme_color;
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0;
+    @media #{$lg}{
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+.service-details_text-3 {
+    margin: 0;
+}
+
+.service-details_bottom {
+    position: relative;
+    display: flex;
+    background-color: $theme_color;
+    align-items: center;
+    padding: 50px 60px 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @media #{$lg} {
+        padding: 40px;        
+    }
+    @media #{$xs} {
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px 30px;
+    }
+}
+
+.service-details_bottom-icon {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    @media #{$xs} {
+        width: inherit;
+    }
+}
+
+
+.service-details_bottom-icon span {
+    font-size: 62px;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.service-details_bottom-text {
+    font-size: 17px;
+    color: #fff;
+    margin: 0;
+    font-weight: 500;
+    line-height: 32px;
+    margin-left: 30px;
+    @media #{$xs} {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+.service-details_how-we-help {
+    position: relative;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.service-details_how-we-help-img {
+    position: relative;
+    display: block;
+}
+
+.service-details_how-we-help-img img {
+    width: 100%;
+}
+
+.service-details_how-we-help-content {
+    position: relative;
+    display: block;
+    margin-top: -9px;
+}
+
+.service-details_how-we-help-title {
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.service-details_how-we-help-text {
+    font-size: 20px;
+    margin: 0;
+    padding-top: 11px;
+    padding-bottom: 35px;
+}
+
+.service-details_how-we-help-points {
+    position: relative;
+    display: block;
+}
+
+.service-details_how-we-help-points li {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.service-details_how-we-help-points li + li {
+    margin-top: 6px;
+}
+
+.service-details_how-we-help-points li .icon {
+    height: 15px;
+    width: 15px;
+    background-color: $theme_color;
+    color: #fff;
+    font-size: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.service-details_how-we-help-points li .text {
+    margin-left: 15px;
+}
+
+.service-details_how-we-help-points li .text p {
+    color: $theme_color;
+    margin: 0;
+    font-weight: 500;
+}
+
+.service-details_two-icon .service-icon i:before {
+    color: $theme_color;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.service-details_bottom-icon {
+    font-size: 50px;
+    color: #fff;
+    
+}
+
+.service-details_sidebar-service-list i:before {
+    font-size: 25px;
+}
+
+.service-details_two-icons .service-icon:before{
+    display: none;
+}

@@ -1,0 +1,268 @@
+
+// Why Choose Us # 01
+
+.choose-us-area{
+    margin-bottom: -180px;
+}
+
+.choose-us-img img {
+	width: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.choose-us-content {
+	background: $theme_color;
+	padding: 87px 40px;
+	position: relative;
+	z-index: 2;
+	margin-bottom: -15px;
+	@media #{$xs}{
+		padding: 65px 40px;
+	}
+    hr {
+        border-color: $theme_color;
+    }
+    h3 {
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 60px;
+        color: #fff;
+        margin: 40px 0;
+        letter-spacing: 1px;    
+		@media #{$md} {
+			font-size: 60px;
+			line-height: 60px;
+		}    
+		@media #{$xs} {
+			font-size: 40px;
+			line-height: 50px;
+			margin: 25px 0;
+		}    
+    }
+}
+
+.choose-us-content .main-btn:hover::before {
+	background: #fff;
+}
+
+.choose-us-img {
+    position: relative;
+}
+
+.pop-up-video{
+	position: absolute;
+	left: 50%;
+	top: 50%;	
+	transform: translate(-50%, -50%);
+	z-index: 9;
+}
+
+.pop-up-video a.video-play-btn {
+	font-size: 25px;
+	color: #fff;
+	border: 2px solid $primary_color;
+	padding: 15px;
+	width: 80px;
+	height: 80px;
+	line-height: 45px;
+	text-align: center;	
+	background: $primary_color;
+	cursor: pointer;	
+}
+
+@keyframes btnIconRipple {
+	0% {
+		border-width: 4px;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	80% {
+		border-width: 1px;
+		-webkit-transform: scale(1.35);
+		transform: scale(1.35);
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.pop-up-video a::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	bottom: -2px;
+	right: -2px;
+	border-radius: inherit;
+	border: 1px solid #FCD1C1;
+	-webkit-animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+	animation: btnIconRipple 2s cubic-bezier(0.23, 1, 0.32, 1) both infinite;
+}
+
+
+// Why Choose Us # 02
+
+.choose_us {
+	position: relative;
+	display: block;
+}
+
+.choose_us_left {
+	position: relative;
+	display: block;
+	margin-left: -364px;
+	margin-right: 80px;
+	@media #{$md} {
+        margin-left: 0;
+		margin-right: 0;
+    }
+	@media #{$xs} {
+        margin-left: 0;
+		margin-right: 0;
+    }
+	
+}
+
+.choose_us_img {
+	position: relative;
+	display: block;
+	
+	img {
+		width: 100%;
+		border-radius: 12px;
+	}
+}
+
+
+
+.choose_us_video-link {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.choose_us_video-icon {
+	height: 147px;
+	width: 162px;
+	background-color: $theme_color;
+	font-size: 25px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.choose_us_video-icon:hover {
+	background-color: #fff;
+	color: $theme_color;
+}
+
+.choose_us_right {
+	position: relative;
+	display: block;
+	margin-left: -20px;
+	@media #{$md} {
+        padding: 25px;
+    }
+	@media #{$xs} {
+        padding: 25px;
+    }
+}
+
+.choose_us_right .section-title {
+	margin-bottom: 27px;
+}
+
+.choose_us_right-text {
+	margin: 0;
+}
+
+.choose_us_points {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	li {
+		position: relative;
+		display: flex;
+		align-items: center;
+		background-color: #E5F0EC;
+		padding: 13px 30px;
+		width: 230px;
+		@media #{$xs} {
+			margin-bottom: 15px;
+		}
+		.icon {
+			position: relative;
+			height: 20px;
+			width: 20px;
+			background-color: $theme_color;
+			border-radius: 50%;			
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	@media #{$xs} {
+        flex-direction: column;
+		text-align: center;
+		align-items: flex-start;
+    }
+
+}
+
+.choose_us_points li + li {
+	margin-left: 15px;
+	@media #{$xs} {
+        margin-left: 0;
+    }
+}
+
+.choose_us_points li .text {
+	margin-left: 15px;
+}
+
+.choose_us_points li .text p {
+	font-weight: 600;
+	margin: 0;
+	color: #333;
+}
+
+.progress-bar-area {
+	margin-top: 35px;
+}
+
+.single-bar-item {
+	padding-top: 7px;
+}
+
+.single-bar-item h4 {
+	font-size: 20px;
+	margin-bottom: 6px;
+}
+
+.barfiller .fill {
+	background: $theme_color !important;
+	border-radius: 30px;
+}
+
+
+.choose_us .section-title h2 br {
+	@media #{$xs}{
+		display: none;
+	}
+  }
+
+  .single-bar-item .barfiller {
+	@media #{$xs}{
+		height: 10px;
+	}
+  }

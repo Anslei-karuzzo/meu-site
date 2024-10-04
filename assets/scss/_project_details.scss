@@ -1,0 +1,121 @@
+/* Project Details  */
+
+.single-content-wrapper {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.project-details-box {
+    background: $theme_color;
+    color: #fff;
+    width: 360px;
+    position: absolute;
+    bottom: -60px;
+    right: 0;
+    @media #{$xs} {
+        position: relative;
+        bottom: -40px;
+    }
+}
+
+.project-details-box {
+    padding: 30px;
+}
+
+.project-details-box-title h4 {
+    font-size: 30px;
+    color: #fff;
+    padding: 10px;
+}
+
+.detail-box-list .list-details h5 {
+    font-size: 20px;
+    line-height: 1;
+    color: #fff;
+    padding-left: 20px;    
+}
+
+.detail-box-list .list-details p {
+    color: #fff;
+}
+
+.list-details {
+    display: flex;
+}
+
+.list-details h5 span {
+    display: block;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    opacity: .7;
+    margin-top: 8px;
+}
+
+.detail-box-list li {
+    padding: 15px 0;
+    display: block;
+    margin-left: 15px;
+}
+
+.list-details i:before {
+    color: #FCC300;
+    font-size: 24px;
+}
+
+.detail-box-list ul li:not(:last-child) {
+    border-bottom: 1px solid rgb(255 255 255 / 8%);
+}
+
+.single-content-area h4 {
+    font-size: 30px;
+    margin: 20px 0;
+    
+}
+
+.single-content-area p{
+    margin: 0;
+}
+
+#project-page .single-service-item {
+    box-shadow: none;
+}
+
+#project-page .single-service-item .service-rating {
+    display: none;
+}
+
+.project-solutions-list li {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #7f7f7f;
+    position: relative;
+    padding-left: 40px;
+}
+
+.project-solutions-list i {
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.project-solutions-list i:before {
+    padding-right: 15px;
+}
+
+.project-details-btn {
+    margin: 50px 0;
+}
+
+.single-img-wrapper {
+    @media #{$md} {
+        margin-top: 20px;
+    }
+
+    @media #{$xs} {
+        margin-top: 20px;
+    }
+}

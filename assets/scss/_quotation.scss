@@ -1,0 +1,94 @@
+
+.quotation-wrapper{
+    padding: 80px 0;
+    background: #fff;
+    @media #{$xs}{
+        padding: 40px 20px;
+    }
+    h2{
+        @media #{$xs}{
+            font-size: 24px;      
+            margin-bottom: 30px;      
+        }
+    }
+}
+
+.quotation-box {
+    border: 1px solid #eee;
+    padding: 40px;
+    @media #{$xs}{
+        padding: 20px;
+    }
+    h5 {
+        font-size: 22px;
+        @media #{$xs}{
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.how_often {
+    padding: 0px;
+    margin: 0;
+    margin-bottom: 25px;
+
+    li {
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        display: inline-block;
+        padding: 12px 10px;
+        text-align: center;
+        width: 145px;
+        margin-right: 19px;
+        cursor: pointer;
+        @media #{$xs}{            
+            margin-bottom: 15px;
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: $theme_color;
+            border-color: $theme_color;
+        }
+    }
+    a {
+        color: #8e8e8e !important;
+        font-size: 15px;
+        text-decoration-line: unset;
+    }
+}
+
+.quotation-item input {
+    @media #{$xs}{
+        margin-bottom: 0;
+    }
+  }
+
+
+  .nice-select span.current {
+    font-size: 15px;
+    font-weight: 500;
+    color: #777;
+}
+
+.nice-select.form-control {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    color: #777;
+}
+
+.nice-select ul.list li{
+    font-size: 15px !important;
+    font-weight: 500;
+}
+
+.nice-select .option.selected{
+    font-weight: 700;
+}

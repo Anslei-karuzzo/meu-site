@@ -1,0 +1,105 @@
+.info-area {
+    padding: 50px 0;
+    border: 1px solid #eee;
+
+    .quick_contact {
+        display: flex;
+        align-items: center;
+        @media #{$lg} {
+            flex-direction: column;
+            text-align: center;
+            gap: 10px;
+        }
+        @media #{$xs} {
+            margin-bottom: 30px;
+        }
+        .contact-icon i {
+            font-size: 50px;
+            color: $theme_color;
+        }
+        .contact-body {
+            padding-left: 22px;
+
+            p {
+                margin: 0;
+                font-size: 16px;
+            }
+            
+            h6 {
+                font-size: 22px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+.info-wrapper {
+    margin-top: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-bottom: -126px;
+    -webkit-transform: translateY(-126px);
+    -ms-transform: translateY(-126px);
+    transform: translateY(-126px);
+    position: relative;
+    z-index: 9;
+    @media #{$md} {
+        margin-top: 170px;
+    }
+    @media #{$xs} {
+        margin-top: 150px;
+    }
+
+    .info-inner {
+        background: $theme_color;
+        display: flex;
+        align-items: center;
+        padding: 30px;
+        border-radius: 7px;
+        @media #{$md} {            
+            padding: 30px 50px;
+        }
+        @media #{$xs} {
+            flex-direction: column;
+            align-items: center; 
+            gap: 15px;
+        }
+
+        .info-icon img {
+            width: 130px;
+        
+            @media #{$xs} {
+                width: 90px;
+            }
+        }
+
+        .info-content {
+            padding-left: 25px;
+        
+            @media #{$xs}{
+                text-align: center;
+                margin-top: 15px;
+            }
+
+            .info-heading {
+                font-size: 25px;
+                color: #fff;
+                font-weight: 500;
+                letter-spacing: 1px;
+                @media #{$md} {
+                    font-size: 36px;
+                }
+            }
+
+            p {
+                color: #fff;
+                margin-top: 20px;
+                font-size: 17px;
+                line-height: 26px;
+            }
+        }
+    
+    }
+
+}

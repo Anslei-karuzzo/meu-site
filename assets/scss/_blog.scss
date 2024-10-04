@@ -1,0 +1,150 @@
+
+.single-blog-item {
+	background: #fff;
+	border: 1px solid #eee;
+    margin-bottom: 30px;
+    @media #{$md} {
+        margin-bottom: 30px;
+    }
+    @media #{$xs} {
+        margin-bottom: 30px;
+    }
+    p{
+        @media #{$xs}{
+            font-size: 15px;
+        }
+    }
+}
+
+p.blog-meta {
+	font-size: 14px;
+	margin: 7px 0;	
+	letter-spacing: 1px;
+	font-weight: 500;
+    &::before {
+        padding-right: 7px;
+    }
+    i {
+        font-size: 18px;
+        margin-right: 4px;
+        color: #DFB163;
+    }
+}
+
+i.las.la-comments {
+	margin-left: 13px;
+}
+
+.blog-content {
+	padding: 20px 35px;
+    @media #{$xs}{
+        padding: 20px;
+    }
+    
+}
+
+.blog-content h5 a {
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 32px;
+	margin-top: 5px;
+	margin-bottom: 20px;
+    &:hover {
+        color: $theme_color;
+        opacity: .8;
+    }
+    @media #{$xs} {
+		font-size: 20px;
+		line-height: 30px;
+	}
+}
+
+.blog-area a.read-more {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 10px 0 0;
+	color: $theme_color;
+    &:hover {
+        color: $theme_color;
+    }    
+}
+
+.blog-bg {
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+	transition: .3s;
+    img {
+        width: 100%;        
+        transition: transform ease 0.3s;
+        object-fit: cover;
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
+    span {
+        background: $theme_color;
+        color: #fff;
+        padding: 20px;
+        display: block;
+        width: 80px;
+        height: auto;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+// Blog Classic 
+
+#blog-classic .blog-content h3 a {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+    @media #{$xs}{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+}
+
+.pagination-block {
+    display: block;
+    margin: 45px auto;
+  }
+  
+  .pagination-block .page-numbers {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    color: $headline_color;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid #e9eef6;
+    border-radius: 3px;
+    margin: 0 3px;
+    padding: 0;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .page-numbers.current {
+    background: $theme_color;
+    color: #fff;
+  }
+  
+  .pagination-block .page-numbers:hover {
+    background: $theme_color;
+    color: #fff;
+  }
+
+  .pagination-block .page-numbers i {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+

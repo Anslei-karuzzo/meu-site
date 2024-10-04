@@ -1,0 +1,152 @@
+.team {
+	position: relative;
+	display: block;
+	padding: 120px 0 120px;
+	z-index: 1;
+    
+}
+
+.team-container {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	max-width: 1300px;
+	width: 100%;
+	padding: 0 15px;
+}
+
+.team-single {
+	position: relative;
+	display: block;
+	margin-bottom: 60px;
+}
+
+.team-img {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: "";
+		background-color: $theme_color;
+		opacity: .3;
+		width: 0%;
+		transform: translateY(100%);
+		transition: all 500ms ease;
+		z-index: 1;
+	}
+}
+
+
+
+.team-single:hover .team-img:before {
+	transform: translateY(0);
+	width: 100%;
+}
+
+.team-img img {
+	width: 100%;
+	transition-delay: 0.1s;
+	transition-timing-function: ease-in-out;
+	transition-duration: 0.7s;
+	transition-property: all;
+}
+
+.team-single:hover .team-img img {
+	transform: scale(1.1) rotate(2deg);
+}
+
+.team-social {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	transform: scaleX(0);
+	transform-origin: center;
+	transform-style: preserve-3d;
+	-webkit-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	transform-origin: bottom center;
+	z-index: 2;
+}
+
+.team-single:hover .team-social {
+	transform: scaleX(1);
+	-webkit-transition-delay: 500ms;
+	-moz-transition-delay: 500ms;
+	-ms-transition-delay: 500ms;
+	-o-transition-delay: 500ms;
+	transition-delay: 500ms;
+}
+
+.team-social li + li {
+	margin-top: 10px;
+}
+
+.team-social li a {
+	position: relative;
+	height: 47px;
+	width: 47px;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 15px;
+	background-color: #fff;
+	-webkit-transition: all 500ms ease;
+	transition: all 500ms ease;
+	z-index: 1;
+    margin-right: 10px;
+}
+
+.team-social li a:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	transition: transform 500ms ease;
+	transform: scale(0, 1);
+	transform-origin: left center;
+	z-index: -1;
+}
+
+.team-social li a:hover:before {
+	transform: scale(1, 1);
+	transform-origin: right center;
+}
+
+.team-social i {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.team-content {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin-top: 22px;
+}
+
+.team-name {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.team-title {
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0;
+	line-height: 26px;
+	
+}
+

@@ -1,0 +1,219 @@
+/* Slider CSS */
+
+.single-slide-item {
+    background-image: url(../img/slider/slide-1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-color: #ddd;
+	color: #fff;
+	width: 100%;
+	height: 800px;    
+	position: relative;
+	z-index: 1;
+	display: flex !important;
+    align-items: center;
+
+	@media #{$xs} {
+        height: 600px;
+    }
+
+        h1 {
+            color: #fff;
+            font-size: 100px;
+            font-weight: 600;
+            line-height: 105px;
+            letter-spacing: 2px;
+            margin: 30px 0;
+
+			@media #{$lg} {
+				font-size: 85px;
+				line-height: 95px;
+			}			
+
+			@media #{$md} {
+				font-size: 75px;
+				line-height: 85px;
+			}			
+
+			@media #{$xs} {
+				font-size: 40px;
+				font-weight: 500;
+				line-height: 45px;				
+			}
+
+			@media #{$sm} {
+				font-size: 50px;
+				line-height: 60px;
+			}
+        }
+        p {
+            color: #fff;
+            font-size: 17px;
+            line-height: 30px;
+			@media #{$xs}{
+				font-size: 16px;
+				line-height: 26px;
+				br{
+					display: none;
+				}
+			}
+        }
+
+		
+               
+}
+
+.hero-area-bg-2 {
+	background-image: url(../img/slider/slide-2.jpg);
+}
+
+.hero-area-bg-3 {
+	background-image: url(../img/slider/slide-3.jpg);
+}
+
+.hero-area-bg-4 {
+	background-image: url(../img/slider/slide-5.jpg);
+}
+
+.hero-area-bg-5 {
+	background-image: url(../img/slider/slide-6.jpg);
+}
+
+
+.homepage-slides .owl-nav button.owl-prev,
+.homepage-slides .owl-nav button.owl-next {
+	width: 50px;
+	height: 50px;
+	border: 2px solid;
+	font-size: 20px;
+	font-weight: 100;
+	line-height: 16px;
+	position: absolute;
+	left: 15px;
+	top: 50%;
+	margin-top: -25px;
+	color: $primary_color;
+	border-radius: 50%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all .3s ease-out 0s;
+	transition: all .3s ease-out 0s;
+}
+
+.homepage-slides .owl-nav button.owl-next {
+	left: auto;
+	right: 15px;
+}
+
+.homepage-slides:hover .owl-nav button.owl-prev,
+.homepage-slides:hover .owl-nav button.owl-next {
+	visibility: visible;
+	opacity: .3;
+}
+
+.homepage-slides .owl-nav button.owl-prev:hover,
+.homepage-slides .owl-nav button.owl-next:hover {
+	background: $primary-color;
+	color: #fff;
+	border-color: $primary-color;
+	opacity: 1;
+}
+
+
+#home-2 .single-slide-item {
+	height: 850px;
+}
+
+// Slick Arrow 
+
+
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 15px;
+	width: 45px;
+	height: 45px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 50%;
+	background: transparent;
+	border: 2px solid #DFB163;
+	color: #fff;
+	font-size: 18px;
+	z-index: 11;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease-out 0s;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.slick-arrow {
+	  top: 0;
+	  bottom: 0;
+	  transform: translateY(230px);
+	}
+  }
+  
+  .slick-arrow:hover {
+	background: #DFB163;
+	border-color: #DFB163;
+	color: #fff;
+  }
+  
+  .slick-arrow.slick-next {
+	right: 15px;
+	left: auto;
+  }
+  
+  .homepage-slides.slick-slider button:before {
+	display: none;
+  }
+  
+  .slick-active .single-slide-item h1 {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+  }
+  
+  .slick-active .single-slide-item p {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+  }
+  
+  .slick-active .main-btn {
+	-webkit-animation-delay: 0.7s;
+	animation-delay: 0.7s;
+	-webkit-animation-duration: 0.7s;
+	animation-duration: 0.7s;
+  }
+  
+  .slick-active .single-slide-item h1,
+  .slick-active .single-slide-item p,
+  .slick-active .main-btn {
+	-webkit-animation-name: fadeInUp;
+	animation-name: fadeInUp;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+  }
+  
+  .slick-active .single-slide-item h1 {
+	-webkit-animation-name: fadeInDown;
+	animation-name: fadeInDown;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+  }
+  
+  .homepage-slides:hover .slick-arrow {
+	opacity: 1;
+	visibility: visible;
+  }
+  
+
+  .hero-area {
+    margin-top: -50px;
+    position: relative;
+    z-index: -1;
+}

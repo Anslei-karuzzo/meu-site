@@ -1,0 +1,169 @@
+.footer-area {
+    background: rgb(20 52 33);
+    color: #fff;
+
+    h6 {
+        font-size: 20px;
+        color: $primary_color;
+        margin: 20px 0;
+    }
+
+    p {
+        font-size: 16px;
+        margin-top: 14px;
+        margin-left: 0;
+        color: #eee;
+    }
+
+    ul li a {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        color: #d7d7d7;
+        padding: 10px 0;
+
+        &:hover {
+            color: $primary_color;
+        }
+    }
+
+    @media #{$xs} {
+        text-align: center;
+    }
+
+}
+
+
+.contact-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.social-area {
+    padding-left: 25px;
+}
+
+
+
+.subscribe-form {
+    position: relative;
+
+    button {
+        font-size: 16px;
+        line-height: 13px;
+        color: #fff;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+        border-radius: 0px 10px 10px 0px;
+        border: 0;
+        cursor: pointer;
+    }
+
+    input {
+        margin: 0;
+        background: #fff;
+        border-radius: 12px 0px 0px 12px;
+        border: 0;
+
+        &::placeholder {
+            color: #797A7E;
+            font-size: 14px;
+        }
+    }
+}
+
+.subscribe-form form {
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-up {
+    padding: 60px 0;
+    padding-top: 80px;
+
+    .social-area i {
+        color: #eee;
+        font-size: 21px;
+        margin-right: 10px;
+        margin-top: 20px;
+    }
+}
+
+
+.footer-bottom {
+    background: #092816;
+    padding: 20px 0;
+
+    p {
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 0;
+        @media #{$md}{
+            margin-bottom: 10px;
+        }
+        @media #{$xs}{
+            margin-bottom: 10px;
+        }
+    }
+
+    a {
+        font-size: 15px;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .copyright-area {
+        text-align: left;
+
+        @media #{$md} {
+            text-align: center;
+        }
+
+        @media #{$xs} {
+            text-align: center;
+        }
+    }
+
+    p.privacy {
+        text-align: center;
+
+        a {
+            position: relative;
+            z-index: 1;
+            margin: 0 10px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    p.privacy a:not(:last-of-type)::after {
+        position: absolute;
+        content: "|";
+        display: inline-block;
+        padding: 0 10px;
+    }
+
+}
+
+.footer-bottom {
+    .social-area {
+        text-align: right;
+
+        @media #{$md} {
+            text-align: center;
+        }
+
+        @media #{$xs} {
+            text-align: center;
+        }
+        i {
+            font-size: 20px;
+            color: #fff;
+            margin-right: 14px;
+        }
+    }
+}
+

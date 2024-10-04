@@ -1,0 +1,18 @@
+
+.single-client {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+        max-width: inherit;
+        opacity: .4;
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    
+}
+
